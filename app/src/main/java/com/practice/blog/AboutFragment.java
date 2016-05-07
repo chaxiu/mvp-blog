@@ -15,6 +15,7 @@ public class AboutFragment extends Fragment {
 
 
     public AboutFragment() {
+        //注意需要android.support.v4.app.Fragment
         // Required empty public constructor
     }
 
