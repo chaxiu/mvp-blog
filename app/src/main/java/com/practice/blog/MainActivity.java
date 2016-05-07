@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 开发技术前线客户端的主界面，由DrawerLayout构成，分为菜单区域和Fragment显示区域，菜单主要由RecyclerView构成，
+ * 由DrawerLayout构成，分为菜单区域和Fragment显示区域，菜单主要由RecyclerView构成，
  * 其中Fragment区域可以显示文章列表和关于信息.
  */
 public class MainActivity extends BaseActionBarActivity {
