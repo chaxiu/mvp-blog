@@ -24,6 +24,7 @@ import java.util.List;
 public class MainActivity extends BaseActionBarActivity {
     protected FragmentManager mFragmentManager; // Fragment管理器
     Fragment mArticleFragment = new ArticleListFragment(); // 文章列表Fragment
+    //使用support.v4下的fragment以及FragmentManager
     android.support.v4.app.Fragment mAboutFragment = new AboutFragment(); // 关于Fragment
     private DrawerLayout mDrawerLayout; // 除了ActionBar之外的根视图
     private RecyclerView mMenuRecyclerView; // 菜单RecyclerView
