@@ -23,12 +23,12 @@ import java.util.List;
  */
 public class MainActivity extends BaseActionBarActivity {
     protected FragmentManager mFragmentManager; // Fragment管理器
-    Fragment mArticleFragment = new ArticleListFragment(); // 文章列表Fragment
+    Fragment mArticleFragment = new ArticleListFragment();
     //使用support.v4下的fragment以及FragmentManager
-    android.support.v4.app.Fragment mAboutFragment = new AboutFragment(); // 关于Fragment
-    private DrawerLayout mDrawerLayout; // 除了ActionBar之外的根视图
-    private RecyclerView mMenuRecyclerView; // 菜单RecyclerView
-    private ActionBarDrawerToggle mDrawerToggle; // ActionBar上的菜单开关
+    android.support.v4.app.Fragment mAboutFragment = new AboutFragment();
+    private DrawerLayout mDrawerLayout;
+    private RecyclerView mMenuRecyclerView;
+    private ActionBarDrawerToggle mDrawerToggle;
 
     @Override
     protected int getContentViewResId() {
