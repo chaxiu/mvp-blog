@@ -22,7 +22,7 @@ import java.util.List;
  * 其中Fragment区域可以显示文章列表和关于信息.
  */
 public class MainActivity extends BaseActionBarActivity {
-    protected FragmentManager mFragmentManager; // Fragment管理器
+    protected FragmentManager mFragmentManager;
     Fragment mArticleFragment = new ArticleListFragment();
     //使用support.v4下的fragment以及FragmentManager
     android.support.v4.app.Fragment mAboutFragment = new AboutFragment();
