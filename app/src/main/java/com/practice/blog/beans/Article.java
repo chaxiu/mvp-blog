@@ -23,7 +23,10 @@
  */
 
 package com.practice.blog.beans;
-
+/**
+ * 博客bean包
+ *
+ * */
 public class Article {
     public static final int ALL = 1;
     public static final int ANDROID = 2;
