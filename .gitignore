@@ -33,3 +33,4 @@ proguard.cfg
 
 /build
 src/main/resources/
+app/src/main/resources/

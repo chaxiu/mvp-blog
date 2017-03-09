@@ -42,7 +42,7 @@ import com.practice.blog.presenter.ArticleDetailPresenter;
  * 
  * @author chaxiu
  */
-public class ArticleDetailActivity extends BaseActionBarActivity implements ArticleDetailView {
+public class ArticleDetailActivity extends BaseFragmentActivity implements ArticleDetailView {
 
     ProgressBar mProgressBar;
     WebView mWebView;
