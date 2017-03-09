@@ -33,7 +33,7 @@ import java.util.List;
  * 
  * @author chaxiu
  */
-public interface ArticleListView extends MvpView {
+public interface BlogListView extends MvpView {
     public void onFetchedArticles(List<Article> result);
 
     public void clearCacheArticles();

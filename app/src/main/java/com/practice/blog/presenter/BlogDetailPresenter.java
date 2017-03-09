@@ -27,7 +27,7 @@ package com.practice.blog.presenter;
 import android.text.TextUtils;
 
 import com.practice.blog.beans.ArticleDetail;
-import com.practice.blog.mvpview.ArticleDetailView;
+import com.practice.blog.mvpview.BlogDetailView;
 import com.practice.blog.utils.db.DatabaseHelper;
 import com.practice.blog.utils.listeners.DataListener;
 import com.practice.blog.utils.net.HtmlUtls;
@@ -39,7 +39,7 @@ import com.practice.blog.utils.net.HttpFlinger;
  * 
  * @author chaxiu
  */
-public class ArticleDetailPresenter extends BasePresenter<ArticleDetailView> {
+public class BlogDetailPresenter extends BasePresenter<BlogDetailView> {
 
     /**
      * 加载文章的具体内容,先从数据库中加载,如果数据库中有，那么则不会从网络上获取

@@ -36,7 +36,7 @@ import com.practice.blog.beans.Article;
 /**
  * 主页文章列表的Adapter
  */
-public class ArticleAdapter extends RecyclerBaseAdapter<Article, ArticleViewHolder> {
+public class BlogAdapter extends RecyclerBaseAdapter<Article, ArticleViewHolder> {
 
     @Override
     protected void bindDataToItemView(ArticleViewHolder viewHolder, Article item) {

@@ -23,7 +23,7 @@ import java.util.List;
  */
 public class MainActivity extends BaseFragmentActivity {
     protected FragmentManager mFragmentManager;
-    Fragment mArticleFragment = new ArticleListFragment();
+    Fragment mArticleFragment = new BlogListFragment();
     //使用support.v4下的fragment以及FragmentManager
     android.support.v4.app.Fragment mAboutFragment = new AboutFragment();
     private DrawerLayout mDrawerLayout;

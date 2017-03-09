@@ -34,10 +34,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.practice.blog.adapters.ArticleAdapter;
+import com.practice.blog.adapters.BlogAdapter;
 import com.practice.blog.beans.Article;
-import com.practice.blog.mvpview.ArticleListView;
-import com.practice.blog.presenter.ArticleListPresenter;
+import com.practice.blog.mvpview.BlogListView;
+import com.practice.blog.presenter.BLogListPresenter;
 import com.practice.blog.utils.listeners.OnItemClickListener;
 import com.practice.blog.utils.widgets.AutoLoadRecyclerView;
 
@@ -48,12 +48,12 @@ import java.util.List;
  * 
  * @author chaxiu
  */
-public class ArticleListFragment extends Fragment implements OnRefreshListener,
-        AutoLoadRecyclerView.OnLoadListener, ArticleListView {
+public class BlogListFragment extends Fragment implements OnRefreshListener,
+        AutoLoadRecyclerView.OnLoadListener, BlogListView {
     protected SwipeRefreshLayout mSwipeRefreshLayout;
     protected AutoLoadRecyclerView mRecyclerView;
-    protected ArticleAdapter mAdapter;
-    private ArticleListPresenter mPresenter = new ArticleListPresenter();
+    protected BlogAdapter mAdapter;
+    private BLogListPresenter mPresenter = new BLogListPresenter();
 
     @Override
     public final View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -85,7 +85,7 @@ public class ArticleListFragment extends Fragment implements OnRefreshListener,
     }
 
     protected void initAdapter() {
-        mAdapter = new ArticleAdapter();
+        mAdapter = new BlogAdapter();
         mAdapter.setOnItemClickListener(new OnItemClickListener<Article>() {
 
             @Override
@@ -100,7 +100,7 @@ public class ArticleListFragment extends Fragment implements OnRefreshListener,
     }
 
     protected void jumpToDetailActivity(Article article) {
-        Intent intent = new Intent(getActivity(), ArticleDetailActivity.class);
+        Intent intent = new Intent(getActivity(), BlogDetailActivity.class);
         intent.putExtra("post_id", article.post_id);
         intent.putExtra("title", article.title);
         startActivity(intent);

@@ -24,6 +24,6 @@
 
 package com.practice.blog.mvpview;
 
-public interface ArticleDetailView extends MvpView {
+public interface BlogDetailView extends MvpView {
     public void onFetchedArticleContent(String html);
 }

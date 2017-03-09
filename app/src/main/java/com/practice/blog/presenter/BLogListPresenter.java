@@ -25,7 +25,7 @@
 package com.practice.blog.presenter;
 
 import com.practice.blog.beans.Article;
-import com.practice.blog.mvpview.ArticleListView;
+import com.practice.blog.mvpview.BlogListView;
 import com.practice.blog.utils.db.DatabaseHelper;
 import com.practice.blog.utils.listeners.DataListener;
 import com.practice.blog.utils.net.HttpFlinger;
@@ -38,7 +38,7 @@ import java.util.List;
  * 
  * @author chaxiu
  */
-public class ArticleListPresenter extends BasePresenter<ArticleListView> {
+public class BLogListPresenter extends BasePresenter<BlogListView> {
 
     public static final int FIRST_PAGE = 1;
     private int mPageIndex = FIRST_PAGE;

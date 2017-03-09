@@ -34,22 +34,22 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 
-import com.practice.blog.mvpview.ArticleDetailView;
-import com.practice.blog.presenter.ArticleDetailPresenter;
+import com.practice.blog.mvpview.BlogDetailView;
+import com.practice.blog.presenter.BlogDetailPresenter;
 
 /**
  * 文章阅读页面,使用WebView加载文章。
  * 
  * @author chaxiu
  */
-public class ArticleDetailActivity extends BaseFragmentActivity implements ArticleDetailView {
+public class BlogDetailActivity extends BaseFragmentActivity implements BlogDetailView {
 
     ProgressBar mProgressBar;
     WebView mWebView;
     private String mPostId;
     private String mTitle ;
     String mJobUrl;
-    ArticleDetailPresenter mPresenter = new ArticleDetailPresenter();
+    BlogDetailPresenter mPresenter = new BlogDetailPresenter();
 
     @Override
     protected int getContentViewResId() {
