@@ -30,7 +30,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.practice.blog.R;
-import com.practice.blog.adapters.ArticleAdapter.ArticleViewHolder;
+import com.practice.blog.adapters.BlogAdapter.ArticleViewHolder;
 import com.practice.blog.beans.Article;
 
 /**
