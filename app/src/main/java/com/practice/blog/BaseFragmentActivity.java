@@ -30,7 +30,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.View.OnClickListener;
 
-public abstract class BaseActionBarActivity extends FragmentActivity {
+public abstract class BaseFragmentActivity extends FragmentActivity {
     protected Toolbar mToolbar;
 
     @Override

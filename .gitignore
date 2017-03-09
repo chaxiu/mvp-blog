@@ -32,3 +32,4 @@ proguard.cfg
 .DS_Store
 
 /build
+src/main/resources/
